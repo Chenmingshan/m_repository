@@ -74,5 +74,11 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            chuqin c = new chuqin();
+            c.Show();
+        }
     }
 }

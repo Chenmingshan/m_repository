@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="chuqin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chuqin.Designer.cs">
+      <DependentUpon>chuqin.cs</DependentUpon>
+    </Compile>
     <Compile Include="ID.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

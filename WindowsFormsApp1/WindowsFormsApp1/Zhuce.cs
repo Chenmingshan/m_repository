@@ -40,7 +40,11 @@ namespace WindowsFormsApp1
             }
             Boolean flag = OperateDatabase.AddData("insert into Zhaohao(ID,Passwords)values('"+zhanghao+"','"+password+"')", constr);
             if (flag == true)
+            {
+                OperateDatabase.AddData("insert into Zhaohao(ID,Pname,Tel,index)values('"+zhanghao+"','"+name+"','"+tel+"',"+0+")",constr);
                 MessageBox.Show("注册成功，请重新登录");
+
+            }
             else
                 MessageBox.Show("数据库插入失败，注册失败，请重试");
             this.Close();
